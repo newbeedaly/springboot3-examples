@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: 'mysql:8.0.27'
+    environment:
+      - 'MYSQL_DATABASE=spring-native'
+      - 'MYSQL_PASSWORD=123456'
+      - 'MYSQL_ROOT_PASSWORD=123456'
+      - 'MYSQL_USER=user'
+    ports:
+      - '3306'
+  redis:
+    image: 'redis:6.2.6'
+    ports:
+      - '6379'
